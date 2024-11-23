@@ -3596,3 +3596,66 @@ body {
         min-width: 44px;
     }
 }
+
+/* Operating System Services Mobile Optimization */
+@media (max-width: 768px) {
+    .service-box {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+
+    .os-features {
+        padding-left: 15px !important;
+        margin-bottom: 15px;
+    }
+
+    .os-features li {
+        font-size: 14px !important;
+        line-height: 1.4;
+        margin-bottom: 10px;
+        padding-right: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .os-features li::before {
+        content: '✓';
+        min-width: 20px;
+        margin-right: 8px;
+        color: #2ecc71;
+    }
+
+    .os-version {
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        background: rgba(52, 152, 219, 0.05);
+        border-left: 3px solid #00a4ef;
+    }
+
+    .os-version h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: var(--primary-color);
+    }
+
+    /* Ensure text doesn't get cut off */
+    .service-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        word-wrap: break-word;
+    }
+
+    .service-list li {
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    /* Add scroll for very long content */
+    .service-box {
+        max-height: 500px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    }
+}
