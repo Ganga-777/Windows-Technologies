@@ -352,84 +352,48 @@ document.getElementById('statusTracker').addEventListener('submit', function(e) 
     }, 1500);
 });
 
-// Enhanced Gallery Carousel Initialization
-$(document).ready(function(){
-    const galleryCarousel = $(".gallery-carousel").owlCarousel({
-        autoplay: true,
-        autoplayHoverPause: true,
-        smartSpeed: 1500,
-        margin: 30,
-        dots: true,
+// Gallery Carousel Initialization
+$(document).ready(function() {
+    $('.gallery-carousel').owlCarousel({
         loop: true,
+        margin: 10,
         nav: true,
-        center: true,
-        lazyLoad: true,
-        navText: [
-            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-        ],
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
         responsive: {
             0: {
                 items: 1,
-                margin: 10,
-                nav: false // Hide navigation on mobile
+                nav: true
             },
-            576: {
-                items: 1,
-                margin: 15
+            600: {
+                items: 2,
+                nav: true
             },
-            768: {
-                items: 1,
-                margin: 20
-            },
-            992: {
-                items: 1,
-                margin: 30
+            1000: {
+                items: 3,
+                nav: true
             }
         },
-        onInitialized: function() {
-            // Add touch swipe support
-            this.$element.find('.owl-item').on('touchstart', function() {
-                galleryCarousel.trigger('stop.owl.autoplay');
-            });
-            
-            this.$element.find('.owl-item').on('touchend', function() {
-                galleryCarousel.trigger('play.owl.autoplay');
-            });
-        }
+        navText: [
+            "<i class='fas fa-chevron-left'></i>",
+            "<i class='fas fa-chevron-right'></i>"
+        ]
     });
 
-    // Prevent zoom on double tap for iOS
-    $('.gallery-carousel img').on('touchend', function(e) {
+    // Disable zoom on double tap
+    $('.gallery-item img').on('touchend', function(e) {
         e.preventDefault();
     });
 
-    // Handle orientation change
-    window.addEventListener('orientationchange', function() {
-        setTimeout(function() {
-            galleryCarousel.trigger('refresh.owl.carousel');
-        }, 200);
+    // Handle swipe gestures
+    $('.gallery-carousel').on('touchstart', function() {
+        $(this).trigger('stop.owl.autoplay');
     });
 
-    // Fullscreen support for mobile devices
-    $('.gallery-carousel img').click(function() {
-        if (
-            document.fullscreenEnabled || 
-            document.webkitFullscreenEnabled || 
-            document.mozFullScreenEnabled ||
-            document.msFullscreenEnabled
-        ) {
-            const elem = this;
-            if (elem.requestFullscreen) {
-                elem.requestFullscreen();
-            } else if (elem.webkitRequestFullscreen) {
-                elem.webkitRequestFullscreen();
-            } else if (elem.mozRequestFullScreen) {
-                elem.mozRequestFullScreen();
-            } else if (elem.msRequestFullscreen) {
-                elem.msRequestFullscreen();
-            }
-        }
+    $('.gallery-carousel').on('touchend', function() {
+        $(this).trigger('play.owl.autoplay');
     });
 });
 
