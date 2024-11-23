@@ -1692,24 +1692,49 @@ body {
 }
 
 .os-features {
-    list-style: none;
     padding-left: 15px !important;
     margin-bottom: 15px !important;
 }
 
 .os-features li {
-    position: relative;
-    padding-left: 20px;
-    font-size: 0.85rem !important;
-    margin-bottom: 5px !important;
+    font-size: 14px !important;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    padding-left: 25px;  /* Add left padding for the checkmark */
+    position: relative;  /* For absolute positioning of checkmark */
+    display: flex;
+    align-items: center;
 }
 
 .os-features li::before {
-    content: '✓';
+    
     position: absolute;
-    left: 0;
-    color: #2ecc71;
+    left: 0;        /* Align to the left */
+    top: 50%;      /* Center vertically */
+    transform: translateY(-50%);
+    
     font-weight: bold;
+    font-size: 14px;
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 768px) {
+    .os-features {
+        padding-left: 0 !important;  /* Remove extra padding */
+        margin-bottom: 15px;
+    }
+
+    .os-features li {
+        padding-left: 25px;  /* Consistent padding */
+        margin-bottom: 10px;
+        font-size: 14px !important;
+        line-height: 1.4;
+    }
+
+    .os-features li::before {
+        left: 0;
+        font-size: 14px;
+    }
 }
 
 .service-card .service-list > li {
@@ -2819,6 +2844,7 @@ body {
     0%, 100% { transform: translateY(0) rotate(0deg); }
     50% { transform: translateY(-20px) rotate(5deg); }
 }
+}
 
 /* Interactive Timeline */
 .timeline {
@@ -3617,27 +3643,9 @@ body {
     .service-box {
         padding: 20px 15px;
         margin-bottom: 20px;
-    }
-
-    .os-features {
-        padding-left: 15px !important;
-        margin-bottom: 15px;
-    }
-
-    .os-features li {
-        font-size: 14px !important;
-        line-height: 1.4;
-        margin-bottom: 10px;
-        padding-right: 10px;
-        display: flex;
-        align-items: flex-start;
-    }
-
-    .os-features li::before {
-        content: '✓';
-        min-width: 20px;
-        margin-right: 8px;
-        color: #2ecc71;
+        height: auto;
+        min-height: 100%;
+        overflow: visible;
     }
 
     .os-version {
@@ -3646,18 +3654,42 @@ body {
         border-radius: 8px;
         background: rgba(52, 152, 219, 0.05);
         border-left: 3px solid #00a4ef;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
-    .os-version h4 {
-        font-size: 16px;
-        margin-bottom: 10px;
-        color: var(--primary-color);
+    .os-features {
+        padding-left: 15px !important;
+        margin-bottom: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
 
-    /* Ensure text doesn't get cut off */
+    .os-features li {
+        font-size: 14px !important;
+        line-height: 1.6;
+        margin-bottom: 8px;
+        padding-right: 10px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    /* Remove fixed height and allow content to flow */
+    .service-box {
+        max-height: none;
+        overflow: visible;
+    }
+
+    /* Ensure all text is visible */
     .service-list {
-        padding: 0;
+        width: 100%;
         margin: 0;
+        padding: 0;
         list-style: none;
         word-wrap: break-word;
     }
@@ -3665,13 +3697,9 @@ body {
     .service-list li {
         padding: 8px 0;
         border-bottom: 1px solid rgba(0,0,0,0.05);
-    }
-
-    /* Add scroll for very long content */
-    .service-box {
-        max-height: 500px;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
