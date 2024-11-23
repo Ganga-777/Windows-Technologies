@@ -1,0 +1,160 @@
+/* Glass Morphism Effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern Gradient Animations */
+.gradient-animate {
+    background: linear-gradient(
+        270deg,
+        #4158D0,
+        #C850C0,
+        #FFCC70
+    );
+    background-size: 200% 200%;
+    animation: gradient-shift 15s ease infinite;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Neumorphism Effect */
+.neumorph {
+    background: #e0e5ec;
+    box-shadow: 
+        9px 9px 16px rgba(163, 177, 198, 0.6),
+        -9px -9px 16px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+/* Modern Text Gradient */
+.gradient-text {
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: hue-rotate 6s infinite;
+}
+
+@keyframes hue-rotate {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+/* Animated Border */
+.border-animate {
+    position: relative;
+    border: none;
+}
+
+.border-animate::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    padding: 2px;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B8AC);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask: 
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: border-rotate 4s linear infinite;
+}
+
+@keyframes border-rotate {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+/* Modern Card Hover */
+.modern-card {
+    transition: all 0.3s ease;
+}
+
+.modern-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Animated Background Mesh */
+.mesh-background {
+    background: 
+        radial-gradient(at 40% 20%, rgba(255,0,128,.1) 0px, transparent 50%),
+        radial-gradient(at 80% 0%, rgba(64,64,255,.15) 0px, transparent 50%),
+        radial-gradient(at 0% 50%, rgba(255,255,0,.1) 0px, transparent 50%),
+        radial-gradient(at 80% 50%, rgba(0,255,0,.1) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, rgba(255,128,0,.1) 0px, transparent 50%),
+        radial-gradient(at 80% 100%, rgba(0,128,255,.1) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, rgba(255,0,0,.1) 0px, transparent 50%);
+    animation: mesh-animate 15s ease infinite alternate;
+}
+
+@keyframes mesh-animate {
+    0% { background-size: 100% 100%; }
+    100% { background-size: 120% 120%; }
+}
+
+/* 3D Button Effect */
+.button-3d {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+.button-3d::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.2);
+    transform: translateZ(-10px);
+    border-radius: inherit;
+}
+
+.button-3d:hover {
+    transform: translateZ(20px);
+}
+
+/* Modern Loading Animation */
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.loader::before,
+.loader::after {
+    content: '';
+    position: absolute;
+    border: 3px solid transparent;
+    border-radius: 50%;
+}
+
+.loader::before {
+    inset: 3px;
+    border-top-color: var(--secondary);
+    animation: spin 2s linear infinite;
+}
+
+.loader::after {
+    inset: 9px;
+    border-top-color: var(--accent);
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} 
