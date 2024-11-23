@@ -3472,3 +3472,127 @@ body {
             margin-bottom: 10px !important;
         }
     }
+    /* Mobile Navigation */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .logo-img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .nav-link {
+        padding: 12px 0;
+        text-align: center;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+}
+/* Mobile Service Cards */
+@media (max-width: 768px) {
+    .service-card {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .service-icon i {
+        font-size: 24px;
+    }
+    
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+}
+/* Mobile Gallery */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .gallery-item {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+/* Mobile Contact Section */
+@media (max-width: 768px) {
+    .contact-info {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+    
+    .form-control {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+}
+/* General Mobile Improvements */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 2rem !important;
+    }
+    
+    h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .section-padding {
+        padding: 40px 0;
+    }
+    
+    .btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    
+    .whatsapp-float {
+        right: 15px;
+        bottom: 15px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Touch Improvements */
+@media (max-width: 768px) {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .scroll-behavior-smooth {
+        scroll-behavior: smooth;
+    }
+    
+    /* Improve touch targets */
+    button, 
+    .nav-link, 
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
