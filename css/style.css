@@ -3874,3 +3874,67 @@ body {
 }
 
 
+/* General styling for the favicon used in the UI */
+.favicon-logo {
+    display: inline-block;
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    background: url('./images/logo.png') no-repeat center center;
+    background-size: contain;
+    border-radius: 50%; /* Optional: Make it circular */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.favicon-logo:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* For placing the favicon/logo next to text in headers */
+.favicon-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.favicon-text h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Style for a larger favicon display */
+.favicon-logo {
+    display: inline-block;
+    width: 80px; /* Larger size for better visibility */
+    height: 80px;
+    background: url('./images/logo.png') no-repeat center center;
+    background-size: contain;
+    border-radius: 10px; /* Optional: Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for interactivity */
+.favicon-logo:hover {
+    transform: scale(1.15); /* Slight zoom on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* For aligning with text or headers */
+.favicon-text {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between the favicon and text */
+}
+
+.favicon-text h1 {
+    font-size: 2rem; /* Larger text to balance with favicon size */
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+}
+
+
