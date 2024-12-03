@@ -3937,4 +3937,40 @@ body {
     font-weight: bold;
 }
 
+.about .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between timeline items */
+}
+
+.about .timeline-item {
+    display: flex;
+    align-items: center; /* Align icon and text */
+    gap: 1rem; /* Space between icon and content */
+}
+
+.about .timeline-item i {
+    font-size: 1.5rem;
+    color: #007bff; /* Adjust color to your brand */
+    flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+.about .timeline-content {
+    flex: 1; /* Allow text to grow and wrap properly */
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 1rem; /* Add padding for mobile view */
+    }
+
+    .timeline-content {
+        word-wrap: break-word; /* Prevent text from overlapping */
+    }
+
+    .about .timeline-item {
+        padding-right: 0; /* Remove unintended padding on mobile */
+    }
+}
+
 
