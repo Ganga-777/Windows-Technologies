@@ -1,27 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+    <!-- Main Pages -->
     <url>
-        <loc>https://www.windowstechnologies.com/</loc>
-        <lastmod>2024-02-22</lastmod>
+        <loc>https://windowstechnologies.in/</loc>
+        <lastmod>2024-06-10</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/logo.png</image:loc>
+            <image:title>Windows Technologies - Best Laptop Repair in Piduguralla</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Service Pages -->
+    <url>
+        <loc>https://windowstechnologies.in/laptop-repair-services</loc>
+        <lastmod>2024-06-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/gallery/laptop-1.jpg</image:loc>
+            <image:title>Professional Laptop Repair Services in Piduguralla</image:title>
+        </image:image>
     </url>
     <url>
-        <loc>https://www.windowstechnologies.com/services</loc>
-        <lastmod>2024-02-22</lastmod>
+        <loc>https://windowstechnologies.in/computer-repair</loc>
+        <lastmod>2024-06-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/gallery/desktop-1.jpg</image:loc>
+            <image:title>Expert Computer Repair Services in Piduguralla</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://windowstechnologies.in/services</loc>
+        <lastmod>2024-06-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/services-banner.jpg</image:loc>
+            <image:title>Complete IT Services in Piduguralla</image:title>
+        </image:image>
     </url>
     <url>
-        <loc>https://www.windowstechnologies.com/cctv</loc>
-        <lastmod>2024-02-22</lastmod>
+        <loc>https://windowstechnologies.in/cctv</loc>
+        <lastmod>2024-06-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/cctv-banner.jpg</image:loc>
+            <image:title>Professional CCTV Installation Services in Piduguralla</image:title>
+        </image:image>
     </url>
+    
+    <!-- Specific Service Pages -->
     <url>
-        <loc>https://www.windowstechnologies.com/contact</loc>
-        <lastmod>2024-02-22</lastmod>
+        <loc>https://windowstechnologies.in/laptop-screen-replacement</loc>
+        <lastmod>2024-06-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/services/laptop-screen.jpg</image:loc>
+            <image:title>Laptop Screen Replacement Services in Piduguralla</image:title>
+        </image:image>
     </url>
-</urlset> 
+    <url>
+        <loc>https://windowstechnologies.in/laptop-motherboard-repair</loc>
+        <lastmod>2024-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/services/motherboard-repair.jpg</image:loc>
+            <image:title>Expert Laptop Motherboard Repair in Piduguralla</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://windowstechnologies.in/virus-removal-services</loc>
+        <lastmod>2024-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/services/virus-removal.jpg</image:loc>
+            <image:title>Professional Virus Removal Services in Piduguralla</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://windowstechnologies.in/data-recovery-services</loc>
+        <lastmod>2024-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/services/data-recovery.jpg</image:loc>
+            <image:title>Data Recovery Services in Piduguralla</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Location-Specific Pages -->
+    <url>
+        <loc>https://windowstechnologies.in/laptop-repair-piduguralla</loc>
+        <lastmod>2024-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/locations/piduguralla.jpg</image:loc>
+            <image:title>Best Laptop Repair Services in Piduguralla</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://windowstechnologies.in/laptop-repair-guntur</loc>
+        <lastmod>2024-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/locations/guntur.jpg</image:loc>
+            <image:title>Professional Laptop Repair in Guntur</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://windowstechnologies.in/laptop-repair-sattenapalle</loc>
+        <lastmod>2024-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/locations/sattenapalle.jpg</image:loc>
+            <image:title>Expert Laptop Repair Services in Sattenapalle</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://windowstechnologies.in/laptop-repair-dachepalli</loc>
+        <lastmod>2024-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/locations/dachepalli.jpg</image:loc>
+            <image:title>Reliable Laptop Repair in Dachepalli</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Information Pages -->
+    <url>
+        <loc>https://windowstechnologies.in/contact</loc>
+        <lastmod>2024-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/contact-banner.jpg</image:loc>
+            <image:title>Contact Windows Technologies in Piduguralla</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://windowstechnologies.in/about</loc>
+        <lastmod>2024-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/about-banner.jpg</image:loc>
+            <image:title>About Windows Technologies - Trusted Computer Repair in Piduguralla</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://windowstechnologies.in/testimonials</loc>
+        <lastmod>2024-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <image:image>
+            <image:loc>https://windowstechnologies.in/images/testimonials-banner.jpg</image:loc>
+            <image:title>Customer Reviews for Windows Technologies in Piduguralla</image:title>
+        </image:image>
+    </url>
+</urlset>
